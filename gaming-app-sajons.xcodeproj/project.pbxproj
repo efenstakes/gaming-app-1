@@ -15,6 +15,7 @@
 		CECA1F832725EC4B00B46C4E /* gaming_app_sajonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F822725EC4B00B46C4E /* gaming_app_sajonsUITests.swift */; };
 		CECA1F852725EC4B00B46C4E /* gaming_app_sajonsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F842725EC4B00B46C4E /* gaming_app_sajonsUITestsLaunchTests.swift */; };
 		CECA1F932725ED0A00B46C4E /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F922725ED0A00B46C4E /* game.swift */; };
+		CECA1F982725EF5700B46C4E /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F972725EF5700B46C4E /* HomePageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		CECA1F822725EC4B00B46C4E /* gaming_app_sajonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gaming_app_sajonsUITests.swift; sourceTree = "<group>"; };
 		CECA1F842725EC4B00B46C4E /* gaming_app_sajonsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gaming_app_sajonsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CECA1F922725ED0A00B46C4E /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
+		CECA1F972725EF5700B46C4E /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,8 @@
 		CECA1F662725EC4400B46C4E /* gaming-app-sajons */ = {
 			isa = PBXGroup;
 			children = (
+				CECA1F962725EF4300B46C4E /* SubViews */,
+				CECA1F942725EF2B00B46C4E /* PageViews */,
 				CECA1F912725ECF800B46C4E /* Models */,
 				CECA1F672725EC4400B46C4E /* gaming_app_sajonsApp.swift */,
 				CECA1F692725EC4400B46C4E /* ContentView.swift */,
@@ -136,6 +140,21 @@
 				CECA1F922725ED0A00B46C4E /* game.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CECA1F942725EF2B00B46C4E /* PageViews */ = {
+			isa = PBXGroup;
+			children = (
+				CECA1F972725EF5700B46C4E /* HomePageView.swift */,
+			);
+			path = PageViews;
+			sourceTree = "<group>";
+		};
+		CECA1F962725EF4300B46C4E /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +289,7 @@
 			files = (
 				CECA1F932725ED0A00B46C4E /* game.swift in Sources */,
 				CECA1F6A2725EC4400B46C4E /* ContentView.swift in Sources */,
+				CECA1F982725EF5700B46C4E /* HomePageView.swift in Sources */,
 				CECA1F682725EC4400B46C4E /* gaming_app_sajonsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
