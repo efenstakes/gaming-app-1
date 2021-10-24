@@ -106,9 +106,3 @@ struct GameCardView: View {
         .padding()
     }
 }
-
-struct GameCardView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameCardView()
-    }
-}
