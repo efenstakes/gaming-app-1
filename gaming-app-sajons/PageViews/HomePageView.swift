@@ -17,11 +17,11 @@ struct HomePageView: View {
                     
                     VStack(alignment: .leading) {
                         Text("Orix")
-                            .font(.largeTitle)
+                            .font(.system(size: 48))
                             .fontWeight(.heavy)
                         
                         Text("Gaming")
-                            .font(.largeTitle)
+                            .font(.system(size: 48))
                             .fontWeight(.medium)
                     }
                     
@@ -29,17 +29,119 @@ struct HomePageView: View {
                     
                     Image("3d box")
                         .resizable()
-                        .frame(width: 120, height: 120, alignment: .center)
+                        .frame(width: 110, height: 110, alignment: .center)
+                        .padding(.trailing)
                     
                 }
-                .padding(.vertical, 80)
+                .padding(.vertical, 40)
+                .padding(.horizontal)
                 
                 // list of games
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(games) { game in
+                            
+                            ZStack {
+                                
+                                // image
+                                Image(game.image)
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 240, height: 400, alignment: .center)
+                                
+                                
+                                // content
+                                VStack(alignment: .leading) {
+                                    
+                                    // top actions
+                                    HStack {
+                                        
+                                        Text("LIVE")
+                                            .foregroundColor(.white)
+                                            .padding(.horizontal, 8)
+                                            .padding(.vertical, 5)
+                                            .background(
+                                                Rectangle()
+                                                    .fill(Color.yellow.opacity(0.7))
+                                                    .cornerRadius(12)
+                                            )
+                                        
+                                        Spacer()
+                                        
+                                        Text("1.5k Playing")
+                                            .foregroundColor(.white)
+                                            .padding(.horizontal, 8)
+                                            .padding(.vertical, 5)
+                                            .background(
+                                                Rectangle()
+                                                    .fill(Color.black.opacity(0.5))
+                                                    .cornerRadius(12)
+                                            )
+                                        
+                                    }
+                                    .padding()
+                                    
+                                    Spacer()
+                                    
+                                    
+                                    HStack {
+                                        
+                                        VStack {
+                                            
+                                            Text("Lego")
+                                                .font(.title)
+                                                .fontWeight(.heavy)
+                                            
+                                            
+                                            Text(game.name)
+                                                .font(.title2)
+                                                .fontWeight(.heavy)
+                                            
+                                        }
+                                        
+                                        Spacer()
+                                        
+                                        Image(systemName: "play.fill")
+                                            .foregroundColor(.white)
+                                            .padding()
+                                            .background(
+                                                Rectangle()
+                                                    .fill(Color.red.opacity(0.7))
+                                                    .cornerRadius(12)
+                                            )
+                                        
+                                    }
+                                    .padding()
+                                    .background(
+                                        LinearGradient(
+                                            colors: [
+                                                .black.opacity(0.3),
+                                                .black.opacity(0.6),
+                                                .black.opacity(0.7),
+                                            ],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        )
+                                    )
+                                    
+                                }
+                                .foregroundColor(.white)
+                                
+                                    
+                                
+                            }
+                            .clipped()
+                            .cornerRadius(32)
+                            .frame(width: 240, height: 400, alignment: .center)
+                            .padding()
+                        
+                        }
+                    }
+                }
                 
             
             
             }
-            .padding(.horizontal)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(
                 leading:
@@ -48,11 +150,11 @@ struct HomePageView: View {
                         Image(systemName: "magnifyingglass")
                             .resizable()
                             .frame(width: 18, height: 18, alignment: .center)
-                            .padding()
+                            .padding(10)
                             .foregroundColor(.white)
                             .background(
                                 Circle().fill(
-                                    Color.red.opacity(0.6)
+                                    Color.red.opacity(0.8)
                                 )
                             )
                             .padding(.trailing)
@@ -65,12 +167,12 @@ struct HomePageView: View {
                 trailing:
                     Image("1-1")
                         .resizable()
-                        .frame(width: 18, height: 18, alignment: .center)
-                        .padding()
+                        .frame(width: 20, height: 20, alignment: .center)
+                        .padding(8)
                         .foregroundColor(.white)
                         .background(
                             Circle().fill(
-                                Color.red.opacity(0.6)
+                                Color.red.opacity(0.8)
                             )
                         )
                 
