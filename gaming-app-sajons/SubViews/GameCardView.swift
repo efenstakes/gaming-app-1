@@ -56,16 +56,16 @@ struct GameCardView: View {
                 
                 HStack {
                     
-                    VStack {
+                    VStack(alignment: .leading) {
                         
                         Text("Lego")
                             .font(.title)
                             .fontWeight(.heavy)
-                        
+                            .padding(.bottom, 0)
                         
                         Text(game.name)
-                            .font(.title2)
-                            .fontWeight(.heavy)
+                            .font(.title3)
+                            .fontWeight(.regular)
                         
                     }
                     

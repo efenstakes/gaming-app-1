@@ -13,7 +13,7 @@ struct HomePageView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 
                 // top
-                HStack(alignment: .top) {
+                HStack(alignment: .center) {
                     
                     VStack(alignment: .leading) {
                         Text("Orix")
@@ -21,7 +21,7 @@ struct HomePageView: View {
                             .fontWeight(.heavy)
                         
                         Text("Gaming")
-                            .font(.system(size: 48))
+                            .font(.system(size: 44))
                             .fontWeight(.medium)
                     }
                     
@@ -61,7 +61,7 @@ struct HomePageView: View {
                             .foregroundColor(.white)
                             .background(
                                 Circle().fill(
-                                    Color.red.opacity(0.8)
+                                    Color.red.opacity(0.9)
                                 )
                             )
                             .padding(.trailing, 2)
