@@ -56,7 +56,7 @@ struct HomePageView: View {
                         
                         Image(systemName: "magnifyingglass")
                             .resizable()
-                            .frame(width: 18, height: 18, alignment: .center)
+                            .frame(width: 19, height: 19, alignment: .center)
                             .padding(10)
                             .foregroundColor(.white)
                             .background(
@@ -64,24 +64,19 @@ struct HomePageView: View {
                                     Color.red.opacity(0.8)
                                 )
                             )
-                            .padding(.trailing)
+                            .padding(.trailing, 2)
                         
                         Text("Search")
-                            .font(.caption)
-                            .bold()
+                            .font(.body)
+                            .fontWeight(.medium)
                         
                     },
                 trailing:
                     Image("1-1")
                         .resizable()
-                        .frame(width: 20, height: 20, alignment: .center)
-                        .padding(8)
+                        .frame(width: 40, height: 40, alignment: .center)
                         .foregroundColor(.white)
-                        .background(
-                            Circle().fill(
-                                Color.red.opacity(0.8)
-                            )
-                        )
+                        .clipShape(Circle())
                 
             )
            
