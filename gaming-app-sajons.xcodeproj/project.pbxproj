@@ -16,6 +16,7 @@
 		CECA1F852725EC4B00B46C4E /* gaming_app_sajonsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F842725EC4B00B46C4E /* gaming_app_sajonsUITestsLaunchTests.swift */; };
 		CECA1F932725ED0A00B46C4E /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F922725ED0A00B46C4E /* game.swift */; };
 		CECA1F982725EF5700B46C4E /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F972725EF5700B46C4E /* HomePageView.swift */; };
+		CECA1F9A272600B000B46C4E /* GameCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F99272600B000B46C4E /* GameCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CECA1F842725EC4B00B46C4E /* gaming_app_sajonsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gaming_app_sajonsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CECA1F922725ED0A00B46C4E /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
 		CECA1F972725EF5700B46C4E /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		CECA1F99272600B000B46C4E /* GameCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		CECA1F962725EF4300B46C4E /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				CECA1F99272600B000B46C4E /* GameCardView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				CECA1F932725ED0A00B46C4E /* game.swift in Sources */,
 				CECA1F6A2725EC4400B46C4E /* ContentView.swift in Sources */,
 				CECA1F982725EF5700B46C4E /* HomePageView.swift in Sources */,
+				CECA1F9A272600B000B46C4E /* GameCardView.swift in Sources */,
 				CECA1F682725EC4400B46C4E /* gaming_app_sajonsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
