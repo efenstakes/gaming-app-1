@@ -72,11 +72,24 @@ struct HomePageView: View {
                         
                     },
                 trailing:
-                    Image("1-1")
-                        .resizable()
-                        .frame(width: 40, height: 40, alignment: .center)
-                        .foregroundColor(.white)
-                        .clipShape(Circle())
+                    HStack {
+                        
+                        NavigationLink(destination: TrendingPageView()) {
+                            Image(systemName: "flame.fill")
+                                .resizable()
+                                .frame(width: 30, height: 40, alignment: .center)
+                                .foregroundColor(.yellow.opacity(0.5))
+                                .clipShape(Circle())
+                                .padding(.trailing, 8)
+                        }
+                        
+                        Image("1-1")
+                            .resizable()
+                            .frame(width: 40, height: 40, alignment: .center)
+                            .foregroundColor(.white)
+                            .clipShape(Circle())
+                        
+                    }
                 
             )
            

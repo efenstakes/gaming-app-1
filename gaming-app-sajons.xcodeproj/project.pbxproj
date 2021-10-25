@@ -17,6 +17,8 @@
 		CECA1F932725ED0A00B46C4E /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F922725ED0A00B46C4E /* game.swift */; };
 		CECA1F982725EF5700B46C4E /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F972725EF5700B46C4E /* HomePageView.swift */; };
 		CECA1F9A272600B000B46C4E /* GameCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F99272600B000B46C4E /* GameCardView.swift */; };
+		CECA1F9C2726080300B46C4E /* TrendingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F9B2726080300B46C4E /* TrendingPageView.swift */; };
+		CECA1F9E27266A8100B46C4E /* GameMiniCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA1F9D27266A8100B46C4E /* GameMiniCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		CECA1F922725ED0A00B46C4E /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
 		CECA1F972725EF5700B46C4E /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		CECA1F99272600B000B46C4E /* GameCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardView.swift; sourceTree = "<group>"; };
+		CECA1F9B2726080300B46C4E /* TrendingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPageView.swift; sourceTree = "<group>"; };
+		CECA1F9D27266A8100B46C4E /* GameMiniCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMiniCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				CECA1F972725EF5700B46C4E /* HomePageView.swift */,
+				CECA1F9B2726080300B46C4E /* TrendingPageView.swift */,
 			);
 			path = PageViews;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				CECA1F99272600B000B46C4E /* GameCardView.swift */,
+				CECA1F9D27266A8100B46C4E /* GameMiniCardView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -292,7 +298,9 @@
 			files = (
 				CECA1F932725ED0A00B46C4E /* game.swift in Sources */,
 				CECA1F6A2725EC4400B46C4E /* ContentView.swift in Sources */,
+				CECA1F9C2726080300B46C4E /* TrendingPageView.swift in Sources */,
 				CECA1F982725EF5700B46C4E /* HomePageView.swift in Sources */,
+				CECA1F9E27266A8100B46C4E /* GameMiniCardView.swift in Sources */,
 				CECA1F9A272600B000B46C4E /* GameCardView.swift in Sources */,
 				CECA1F682725EC4400B46C4E /* gaming_app_sajonsApp.swift in Sources */,
 			);
