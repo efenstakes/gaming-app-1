@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TrendingPageView: View {
+    var showNavsInside: Bool = false
+    
     var body: some View {
         ZStack(alignment: .top) {
             
@@ -45,7 +47,6 @@ struct TrendingPageView: View {
                         
                     }
                 }
-                
                 
                 
                 // bottom one
@@ -119,12 +120,48 @@ struct TrendingPageView: View {
             }
         
             // navigation titles
-            HStack {
+            if showNavsInside  {
                 HStack {
+                    HStack {
+                        
+                        Image(systemName: "chevron.backward")
+                            .resizable()
+                            .frame(width: 12, height: 12, alignment: .center)
+                            .padding(12)
+                            .foregroundColor(.white)
+                            .background(
+                                Circle().fill(
+                                    Color.red.opacity(0.9)
+                                )
+                            )
+                            .padding(.trailing, 2)
+                        
+                        Text("Back")
+                            .font(.body)
+                            .fontWeight(.medium)
+                        
+                    }
                     
+                    Spacer()
+                    
+                    Image("1-1")
+                        .resizable()
+                        .frame(width: 40, height: 40, alignment: .center)
+                        .foregroundColor(.white)
+                        .clipShape(Circle())
+                }
+                .padding()
+            }
+            
+        }
+        .navigationBarHidden( showNavsInside ? true : false )
+        .navigationBarItems(
+            leading:
+                HStack {
+
                     Image(systemName: "chevron.backward")
                         .resizable()
-                        .frame(width: 14, height: 14, alignment: .center)
+                        .frame(width: 12, height: 12, alignment: .center)
                         .padding(12)
                         .foregroundColor(.white)
                         .background(
@@ -133,53 +170,19 @@ struct TrendingPageView: View {
                             )
                         )
                         .padding(.trailing, 2)
-                    
+
                     Text("Back")
                         .font(.body)
                         .fontWeight(.medium)
-                    
-                }
-                
-                Spacer()
-                
+
+                },
+            trailing:
                 Image("1-1")
                     .resizable()
                     .frame(width: 40, height: 40, alignment: .center)
                     .foregroundColor(.white)
                     .clipShape(Circle())
-            }
-            .padding()
-        
-        }
-        .navigationBarHidden(true)
-//        .navigationBarItems(
-//            leading:
-//                HStack {
-//
-//                    Image(systemName: "chevron.backward")
-//                        .resizable()
-//                        .frame(width: 19, height: 19, alignment: .center)
-//                        .padding(10)
-//                        .foregroundColor(.white)
-//                        .background(
-//                            Circle().fill(
-//                                Color.red.opacity(0.9)
-//                            )
-//                        )
-//                        .padding(.trailing, 2)
-//
-//                    Text("Back")
-//                        .font(.body)
-//                        .fontWeight(.medium)
-//
-//                },
-//            trailing:
-//                Image("1-1")
-//                    .resizable()
-//                    .frame(width: 40, height: 40, alignment: .center)
-//                    .foregroundColor(.white)
-//                    .clipShape(Circle())
-//        )
+        )
         
     }
 }
