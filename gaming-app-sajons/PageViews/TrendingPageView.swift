@@ -10,6 +10,9 @@ import SwiftUI
 struct TrendingPageView: View {
     var showNavsInside: Bool = false
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    
     var body: some View {
         ZStack(alignment: .top) {
             
@@ -140,6 +143,9 @@ struct TrendingPageView: View {
                             .font(.body)
                             .fontWeight(.medium)
                         
+                    }
+                    .onTapGesture {
+                        self.presentationMode.wrappedValue.dismiss()
                     }
                     
                     Spacer()
