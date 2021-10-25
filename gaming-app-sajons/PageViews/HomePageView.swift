@@ -74,7 +74,7 @@ struct HomePageView: View {
                 trailing:
                     HStack {
                         
-                        NavigationLink(destination: TrendingPageView()) {
+                        NavigationLink(destination: TrendingPageView( showNavsInside: true )) {
                             Image(systemName: "flame.fill")
                                 .resizable()
                                 .frame(width: 30, height: 40, alignment: .center)
