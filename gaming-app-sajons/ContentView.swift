@@ -16,9 +16,9 @@ struct ContentView: View {
                     Label("Home", systemImage: "house")
                 }
             
-            Text("Bookmarked")
+            TrendingPageView(showNavsInside: false)
                 .tabItem {
-                    Label("Bookmarked", systemImage: "bookmark")
+                    Label("Trending", systemImage: "flame.fill")
                 }
             
             Text("Live")
